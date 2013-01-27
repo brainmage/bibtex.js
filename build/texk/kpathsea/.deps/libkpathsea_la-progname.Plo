@@ -1,0 +1,186 @@
+libkpathsea_la-progname.lo: ../../../src/texk/kpathsea/progname.c \
+  ../../../src/texk/kpathsea/../kpathsea/config.h ../kpathsea/c-auto.h \
+  ../../../src/texk/kpathsea/../kpathsea/c-std.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/math.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/reent.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/_ansi.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/newlib.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/config.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/machine/ieeefp.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/features.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/_types.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/machine/_types.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/machine/_default_types.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/lock.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/stddef.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/stdio.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/stdarg.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/types.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/machine/types.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/stdint.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/sched.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/stdio.h \
+  ../../../src/texk/kpathsea/../kpathsea/c-unistd.h \
+  ../../../src/texk/kpathsea/../kpathsea/systypes.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/unistd.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/unistd.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/stdlib.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/machine/stdlib.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/alloca.h \
+  ../../../src/texk/kpathsea/../kpathsea/c-memstr.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/string.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/string.h \
+  ../../../src/texk/kpathsea/../kpathsea/c-errno.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/errno.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/errno.h \
+  ../../../src/texk/kpathsea/../kpathsea/c-minmax.h \
+  ../../../src/texk/kpathsea/../kpathsea/c-limits.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/limits.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/bsd/float.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/cdefs.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/assert.h \
+  ../../../src/texk/kpathsea/../kpathsea/c-proto.h \
+  ../../../src/texk/kpathsea/../kpathsea/debug.h \
+  ../../../src/texk/kpathsea/../kpathsea/types.h \
+  ../../../src/texk/kpathsea/../kpathsea/str-llist.h \
+  ../../../src/texk/kpathsea/../kpathsea/hash.h \
+  ../../../src/texk/kpathsea/../kpathsea/str-list.h \
+  ../../../src/texk/kpathsea/../kpathsea/lib.h \
+  ../../../src/texk/kpathsea/../kpathsea/progname.h \
+  ../../../src/texk/kpathsea/../kpathsea/absolute.h \
+  ../../../src/texk/kpathsea/../kpathsea/c-pathch.h \
+  ../../../src/texk/kpathsea/../kpathsea/c-ctype.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/ctype.h \
+  ../../../src/texk/kpathsea/../kpathsea/c-pathmx.h \
+  ../../../src/texk/kpathsea/../kpathsea/c-stat.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/stat.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/time.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/machine/time.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/signal.h \
+  /spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/signal.h \
+  ../../../src/texk/kpathsea/../kpathsea/pathsearch.h \
+  ../../../src/texk/kpathsea/../kpathsea/tex-file.h
+
+../../../src/texk/kpathsea/../kpathsea/config.h:
+
+../kpathsea/c-auto.h:
+
+../../../src/texk/kpathsea/../kpathsea/c-std.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/math.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/reent.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/_ansi.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/newlib.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/config.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/machine/ieeefp.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/features.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/_types.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/machine/_types.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/machine/_default_types.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/lock.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/stddef.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/stdio.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/stdarg.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/types.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/machine/types.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/stdint.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/sched.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/stdio.h:
+
+../../../src/texk/kpathsea/../kpathsea/c-unistd.h:
+
+../../../src/texk/kpathsea/../kpathsea/systypes.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/unistd.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/unistd.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/stdlib.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/machine/stdlib.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/alloca.h:
+
+../../../src/texk/kpathsea/../kpathsea/c-memstr.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/string.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/string.h:
+
+../../../src/texk/kpathsea/../kpathsea/c-errno.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/errno.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/errno.h:
+
+../../../src/texk/kpathsea/../kpathsea/c-minmax.h:
+
+../../../src/texk/kpathsea/../kpathsea/c-limits.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/limits.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/bsd/float.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/cdefs.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/assert.h:
+
+../../../src/texk/kpathsea/../kpathsea/c-proto.h:
+
+../../../src/texk/kpathsea/../kpathsea/debug.h:
+
+../../../src/texk/kpathsea/../kpathsea/types.h:
+
+../../../src/texk/kpathsea/../kpathsea/str-llist.h:
+
+../../../src/texk/kpathsea/../kpathsea/hash.h:
+
+../../../src/texk/kpathsea/../kpathsea/str-list.h:
+
+../../../src/texk/kpathsea/../kpathsea/lib.h:
+
+../../../src/texk/kpathsea/../kpathsea/progname.h:
+
+../../../src/texk/kpathsea/../kpathsea/absolute.h:
+
+../../../src/texk/kpathsea/../kpathsea/c-pathch.h:
+
+../../../src/texk/kpathsea/../kpathsea/c-ctype.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/ctype.h:
+
+../../../src/texk/kpathsea/../kpathsea/c-pathmx.h:
+
+../../../src/texk/kpathsea/../kpathsea/c-stat.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/stat.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/time.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/machine/time.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/signal.h:
+
+/spin/WikiCite/bibtex2js/emscripten/system/include/libc/sys/signal.h:
+
+../../../src/texk/kpathsea/../kpathsea/pathsearch.h:
+
+../../../src/texk/kpathsea/../kpathsea/tex-file.h:

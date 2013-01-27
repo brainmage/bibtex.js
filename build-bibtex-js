@@ -1,0 +1,95 @@
+#!/bin/bash
+# GPLv2, Brian Mingus.
+# build bibtex.js from texlive
+
+#
+# Step 0: Configuration
+# You MUST do this first. Modifying anything else is optional.
+#
+
+workdir=/spin/WikiCite/bibtex2js
+# obtain from http://mirrors.ctan.org/systems/texlive/Source/texlive-20120628-source.tar.xz
+tldate=20120628 
+
+
+#
+# Step 1: Set up a clean workspace
+#
+
+mkdir -p $workdir
+cd $workdir
+tldir=texlive-${tldate}-source
+tlfile=${tldir}.tar.xz
+rm -fr $tldir src build
+
+if [[ ! -f $tlfile ]]; then
+    wget "http://mirrors.ctan.org/systems/texlive/Source/$tlfile"
+fi
+
+tar -xf $tlfile
+mv $tldir src
+mkdir build
+
+#
+# Step 2: configure and make regular executables
+# These are borrowed from the build script in texlive.js
+#
+
+OPTS="--without-x --disable-shared"
+
+cd build
+
+mkdir texk
+cd texk
+
+mkdir kpathsea web2c
+
+cd kpathsea
+../../../src/texk/kpathsea/configure $OPTS
+make libkpathsea.la
+
+cd ../web2c
+../../../src/texk/web2c/configure $OPTS
+make bibtex
+
+function backupbins {
+    cp tangleboot tangleboot.bck
+    cp tangle tangle.bck
+    cp web2c/web2c web2c/web2c.bck
+    cp web2c/fixwrites web2c/fixwrites.bck
+    cp web2c/splitup web2c/splitup.bck
+}
+
+function restorebins {
+    cp tangleboot.bck tangleboot
+    cp tangle.bck tangle
+    cp web2c/web2c.bck web2c/web2c
+    cp web2c/fixwrites.bck web2c/fixwrites
+    cp web2c/splitup.bck web2c/splitup
+    chmod +x tangleboot tangle web2c/web2c web2c/fixwrites web2c/splitup
+}
+
+backupbins
+
+cd ../kpathsea
+make clean
+emconfigure ../../../src/texk/kpathsea/configure $OPTS
+emmake make libkpathsea.la
+
+cd ../web2c
+make clean
+
+restorebins
+
+emconfigure ../../../src/texk/web2c/configure $OPTS
+emmake make bibtex
+
+cp tangleboot.bck tangleboot
+
+emmake make bibtex
+
+cp tangle.bck tangle
+
+emmake make bibtex
+
+/spin/WikiCite/bibtex2js/emscripten/emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -o bibtex.js bibtex.o  lib/lib.a /spin/WikiCite/bibtex2js/build/texk/kpathsea/.libs/libkpathsea.a -lm
