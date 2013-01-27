@@ -85,11 +85,18 @@ emconfigure ../../../src/texk/web2c/configure $OPTS
 emmake make bibtex
 
 cp tangleboot.bck tangleboot
+chmod +x tangleboot
+emmake make bibtex
 
+restorebins
+emmake make bibtex
+
+cp tangleboot.bck tangleboot
+chmod +x tangleboot
 emmake make bibtex
 
 cp tangle.bck tangle
-
+chmod +x tangle
 emmake make bibtex
 
 /spin/WikiCite/bibtex2js/emscripten/emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -o bibtex.js bibtex.o  lib/lib.a /spin/WikiCite/bibtex2js/build/texk/kpathsea/.libs/libkpathsea.a -lm
