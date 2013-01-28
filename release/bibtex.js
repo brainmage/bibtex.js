@@ -23,7 +23,7 @@ function(){
 
 
   window.BibTeX = function(root) {
-    var worker = new Worker(root+'bibtex.js/release/bibtex-webworker.js');
+    var worker = new Worker('../release/bibtex-webworker.js');
     var promises = [];
     var self = this;
 
