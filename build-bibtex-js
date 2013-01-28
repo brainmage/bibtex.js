@@ -7,8 +7,8 @@
 # You MUST do this first. Modifying anything else is optional.
 #
 
-workdir=/spin/WikiCite/bibtex2js
-# obtain from http://mirrors.ctan.org/systems/texlive/Source/texlive-20120628-source.tar.xz
+workdir=$(pwd)
+# obtain from http://mirrors.ctan.org/systems/texlive/Source
 tldate=20120628 
 
 
@@ -45,8 +45,9 @@ cd texk
 mkdir kpathsea web2c
 
 cd kpathsea
+#sed -ir 's/assert\ \(ret\)/\/\/assert\ \(ret\)/' ../../../src/texk/kpathsea/progname.c
 ../../../src/texk/kpathsea/configure $OPTS
-make libkpathsea.la
+make
 
 cd ../web2c
 ../../../src/texk/web2c/configure $OPTS
@@ -74,7 +75,7 @@ backupbins
 cd ../kpathsea
 make clean
 emconfigure ../../../src/texk/kpathsea/configure $OPTS
-emmake make libkpathsea.la
+emmake make
 
 cd ../web2c
 make clean
@@ -99,4 +100,10 @@ cp tangle.bck tangle
 chmod +x tangle
 emmake make bibtex
 
-/spin/WikiCite/bibtex2js/emscripten/emcc -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas -o bibtex.js bibtex.o  lib/lib.a /spin/WikiCite/bibtex2js/build/texk/kpathsea/.libs/libkpathsea.a -lm
+cp -r ../../../demo_files/* .
+
+env EMCC_DEBUG=1 emcc -o bibtex.js bibtex.o  lib/lib.a ../kpathsea/.libs/libkpathsea.a --embed-file test.aux --embed-file texmf.cnf --embed-file /usr/share/texmf-texlive/bibtex/bst/base/plain.bst --pre-js pre.js --post-js post.js
+
+sed -ir 's/_putc/_fputc/' bibtex.js
+
+node bibtex.js test
