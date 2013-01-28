@@ -6,11 +6,9 @@
 # Step 0: Configuration
 # You MUST do this first. Modifying anything else is optional.
 #
-
 workdir=$(pwd)
 # obtain from http://mirrors.ctan.org/systems/texlive/Source
 tldate=20120628 
-
 
 #
 # Step 1: Set up a clean workspace
@@ -100,9 +98,9 @@ cp tangle.bck tangle
 chmod +x tangle
 emmake make bibtex
 
-cp -r ../../../demo_files/* .
+#cp -r ../../../demo_files/* .
 
-env EMCC_DEBUG=1 emcc -o bibtex.js bibtex.o  lib/lib.a ../kpathsea/.libs/libkpathsea.a --embed-file test.aux --embed-file texmf.cnf --embed-file /usr/share/texmf-texlive/bibtex/bst/base/plain.bst --pre-js pre.js --post-js post.js
+env EMCC_DEBUG=1 emcc -o bibtex.js bibtex.o  lib/lib.a ../kpathsea/.libs/libkpathsea.a --pre-js pre.js --post-js post.js
 
 sed -ir 's/_putc/_fputc/' bibtex.js
 
