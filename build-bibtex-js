@@ -35,15 +35,10 @@ mkdir build
 
 OPTS="--without-x --disable-shared"
 
-cd build
+mkdir -p build/texk/kpathsea build/texk/web2c
 
-mkdir texk
-cd texk
-
-mkdir kpathsea web2c
-
-cd kpathsea
-#sed -ir 's/assert\ \(ret\)/\/\/assert\ \(ret\)/' ../../../src/texk/kpathsea/progname.c
+cd build/texk/kpathsea
+sed -ri 's/assert\ \(ret\)/\/\/assert\ \(ret\)/' ../../../src/texk/kpathsea/progname.c
 ../../../src/texk/kpathsea/configure $OPTS
 make
 
@@ -71,20 +66,14 @@ function restorebins {
 backupbins
 
 cd ../kpathsea
-make clean
 emconfigure ../../../src/texk/kpathsea/configure $OPTS
+#sed -ri 's/\".*\"$/\"\/\"/' paths.h
 emmake make
 
 cd ../web2c
 make clean
-
 restorebins
-
 emconfigure ../../../src/texk/web2c/configure $OPTS
-emmake make bibtex
-
-cp tangleboot.bck tangleboot
-chmod +x tangleboot
 emmake make bibtex
 
 restorebins
@@ -98,10 +87,12 @@ cp tangle.bck tangle
 chmod +x tangle
 emmake make bibtex
 
-#cp -r ../../../demo_files/* .
+cp -r ../../../demo_files/{test.aux,plain.bst,refs.bib,ls-R,texmf.cnf,texmf-config,texmf-var,texmf,texmf-local,texmf-dist,bin} .
+env EMCC_DEBUG=1 emcc -o bibtex.sa.js bibtex.o  lib/lib.a ../kpathsea/.libs/libkpathsea.a --embed-file test.aux --embed-file plain.bst --embed-file refs.bib --embed-file ls-R --embed-file texmf.cnf --embed-file texmf-var  --embed-file texmf --embed-file texmf-local --embed-file texmf-dist --embed-file bin  -s FS_LOG=1
+sed -ir 's/_putc/_fputc/' bibtex.sa.js
+node bibtex.sa.js test
 
-env EMCC_DEBUG=1 emcc -o bibtex.js bibtex.o  lib/lib.a ../kpathsea/.libs/libkpathsea.a --pre-js pre.js --post-js post.js
-
-sed -ir 's/_putc/_fputc/' bibtex.js
-
-node bibtex.js test
+cp ../../../release/pre.js ../../../release/post.js .
+emcc -o bibtex.js bibtex.o  lib/lib.a ../kpathsea/.libs/libkpathsea.a --pre-js pre.js --post-js post.js --embed-file plain.bst --embed-file refs.bib --embed-file ls-R --embed-file texmf.cnf --embed-file texmf-var  --embed-file texmf --embed-file texmf-local --embed-file texmf-dist --embed-file bin
+#env EMCC_DEBUG=1 emcc -o bibtex.js bibtex.o  lib/lib.a ../kpathsea/.libs/libkpathsea.a --pre-js pre.js --post-js post.js  --embed-file plain.bst --embed-file refs.bib
+cp bibtex.js ../../../release/bibtex-webworker.js

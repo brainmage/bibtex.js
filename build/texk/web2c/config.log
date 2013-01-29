@@ -30,7 +30,7 @@ uname -v = #57-Ubuntu SMP Tue Jan 8 21:44:52 UTC 2013
 PATH: /bin
 PATH: /usr/local/bin
 PATH: /usr/bin
-PATH: /spin/WikiCite/bibtex.js/emscripten
+PATH: /var/www/bibtex.js/emscripten/
 
 
 ## ----------- ##
@@ -59,61 +59,61 @@ configure:3689: result: printf
 configure:3722: checking for style of include used by make
 configure:3750: result: GNU
 configure:3821: checking for gcc
-configure:3848: result: /spin/WikiCite/bibtex.js/emscripten/emcc
+configure:3848: result: /var/www/bibtex.js/emscripten/emcc
 configure:4077: checking for C compiler version
-configure:4086: /spin/WikiCite/bibtex.js/emscripten/emcc --version >&5
+configure:4086: /var/www/bibtex.js/emscripten/emcc --version >&5
 emcc (Emscripten GCC-like replacement) 2.0
 Copyright (C) 2012 the Emscripten authors.
 This is free and open source software under the MIT license.
 There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
   
 configure:4097: $? = 0
-configure:4086: /spin/WikiCite/bibtex.js/emscripten/emcc -v >&5
+configure:4086: /var/www/bibtex.js/emscripten/emcc -v >&5
 emcc (Emscripten GCC-like replacement + linker emulating GNU ld ) 2.0
 clang version 3.2 (tags/RELEASE_32/final)
 Target: i386-pc-linux-gnu
 Thread model: posix
 configure:4097: $? = 0
-configure:4086: /spin/WikiCite/bibtex.js/emscripten/emcc -V >&5
+configure:4086: /var/www/bibtex.js/emscripten/emcc -V >&5
 clang: error: unsupported option '-V -nostdinc'
 clang: error: no input files
 configure:4097: $? = 1
-configure:4086: /spin/WikiCite/bibtex.js/emscripten/emcc -qversion >&5
+configure:4086: /var/www/bibtex.js/emscripten/emcc -qversion >&5
 clang: error: no input files
 configure:4097: $? = 1
 configure:4117: checking whether the C compiler works
-configure:4139: /spin/WikiCite/bibtex.js/emscripten/emcc    conftest.c  >&5
+configure:4139: /var/www/bibtex.js/emscripten/emcc    conftest.c  >&5
 configure:4143: $? = 0
 configure:4191: result: yes
 configure:4194: checking for C compiler default output file name
 configure:4196: result: a.out
 configure:4202: checking for suffix of executables
-configure:4209: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:4209: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:4213: $? = 0
 configure:4235: result: 
 configure:4257: checking whether we are cross compiling
-configure:4265: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:4265: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:4269: $? = 0
 configure:4276: ./conftest
 configure:4280: $? = 0
 configure:4295: result: no
 configure:4300: checking for suffix of object files
-configure:4322: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:4322: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:4326: $? = 0
 configure:4347: result: o
 configure:4351: checking whether we are using the GNU C compiler
-configure:4370: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:4370: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:4370: $? = 0
 configure:4379: result: yes
-configure:4388: checking whether /spin/WikiCite/bibtex.js/emscripten/emcc accepts -g
-configure:4408: /spin/WikiCite/bibtex.js/emscripten/emcc -c -g  conftest.c >&5
+configure:4388: checking whether /var/www/bibtex.js/emscripten/emcc accepts -g
+configure:4408: /var/www/bibtex.js/emscripten/emcc -c -g  conftest.c >&5
 configure:4408: $? = 0
 configure:4449: result: yes
-configure:4466: checking for /spin/WikiCite/bibtex.js/emscripten/emcc option to accept ISO C89
-configure:4529: /spin/WikiCite/bibtex.js/emscripten/emcc  -c   conftest.c >&5
+configure:4466: checking for /var/www/bibtex.js/emscripten/emcc option to accept ISO C89
+configure:4529: /var/www/bibtex.js/emscripten/emcc  -c   conftest.c >&5
 configure:4529: $? = 0
 configure:4542: result: none needed
-configure:4564: checking dependency style of /spin/WikiCite/bibtex.js/emscripten/emcc
+configure:4564: checking dependency style of /var/www/bibtex.js/emscripten/emcc
 configure:4675: result: gcc3
 configure:4690: checking for a sed that does not truncate output
 configure:4754: result: /bin/sed
@@ -123,14 +123,14 @@ configure:4835: checking for egrep
 configure:4897: result: /bin/grep -E
 configure:4902: checking for fgrep
 configure:4964: result: /bin/grep -F
-configure:4999: checking for ld used by /spin/WikiCite/bibtex.js/emscripten/emcc
-configure:5066: result: /spin/WikiCite/bibtex.js/emscripten/emcc
-configure:5073: checking if the linker (/spin/WikiCite/bibtex.js/emscripten/emcc) is GNU ld
+configure:4999: checking for ld used by /var/www/bibtex.js/emscripten/emcc
+configure:5066: result: /var/www/bibtex.js/emscripten/emcc
+configure:5073: checking if the linker (/var/www/bibtex.js/emscripten/emcc) is GNU ld
 configure:5088: result: yes
 configure:5100: checking for BSD- or MS-compatible name lister (nm)
 configure:5149: result: /usr/bin/nm -B
 configure:5279: checking the name lister (/usr/bin/nm -B) interface
-configure:5286: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:5286: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:5289: /usr/bin/nm -B "conftest.o"
 configure:5292: output
 00000000 B some_variable
@@ -147,7 +147,7 @@ configure:5516: checking how to convert x86_64-unknown-linux-gnu file names to x
 configure:5556: result: func_convert_file_noop
 configure:5563: checking how to convert x86_64-unknown-linux-gnu file names to toolchain format
 configure:5583: result: func_convert_file_noop
-configure:5590: checking for /spin/WikiCite/bibtex.js/emscripten/emcc option to reload object files
+configure:5590: checking for /var/www/bibtex.js/emscripten/emcc option to reload object files
 configure:5597: result: -r
 configure:5671: checking for objdump
 configure:5687: found /usr/bin/objdump
@@ -159,11 +159,11 @@ configure:6044: result: no
 configure:6071: checking how to associate runtime and link libraries
 configure:6098: result: printf %s\n
 configure:6223: checking for archiver @FILE support
-configure:6240: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:6240: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:6240: $? = 0
-configure:6243: /spin/WikiCite/bibtex.js/emscripten/emar cru libconftest.a @conftest.lst >&5
+configure:6243: /var/www/bibtex.js/emscripten/emar cru libconftest.a @conftest.lst >&5
 configure:6246: $? = 0
-configure:6251: /spin/WikiCite/bibtex.js/emscripten/emar cru libconftest.a @conftest.lst >&5
+configure:6251: /var/www/bibtex.js/emscripten/emar cru libconftest.a @conftest.lst >&5
 /spin/WikiCite/llvm-3.2.src/Release+Asserts/bin/llvm-ar: File does not exist: conftest.o
 
 configure:6254: $? = 0
@@ -172,18 +172,18 @@ configure:6324: checking for strip
 configure:6340: found /usr/bin/strip
 configure:6351: result: strip
 configure:6423: checking for ranlib
-configure:6450: result: /spin/WikiCite/bibtex.js/emscripten/emranlib
-configure:6552: checking command to parse /usr/bin/nm -B output from /spin/WikiCite/bibtex.js/emscripten/emcc object
-configure:6672: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:6450: result: /var/www/bibtex.js/emscripten/emranlib
+configure:6552: checking command to parse /usr/bin/nm -B output from /var/www/bibtex.js/emscripten/emcc object
+configure:6672: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:6675: $? = 0
 configure:6679: /usr/bin/nm -B conftest.o \| sed -n -e 's/^.*[ ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[ ][ ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p' | sed '/ __gnu_lto/d' \> conftest.nm
 configure:6682: $? = 0
-configure:6748: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c conftstm.o >&5
+configure:6748: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c conftstm.o >&5
 configure:6751: $? = 0
 configure:6789: result: ok
 configure:6826: checking for sysroot
 configure:6856: result: no
-configure:6933: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:6933: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:6936: $? = 0
 configure:7112: checking for mt
 configure:7128: found /bin/mt
@@ -192,9 +192,9 @@ configure:7162: checking if mt is a manifest tool
 configure:7168: mt '-?'
 configure:7176: result: no
 configure:7818: checking how to run the C preprocessor
-configure:7849: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:7849: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 configure:7849: $? = 0
-configure:7863: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:7863: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 conftest.c:9:10: fatal error: 'ac_nonexistent.h' file not found
 #include <ac_nonexistent.h>
          ^
@@ -210,10 +210,10 @@ configure: failed program was:
 | #define PACKAGE_URL ""
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:7888: result: /spin/WikiCite/bibtex.js/emscripten/emcc -E
-configure:7908: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:7888: result: /var/www/bibtex.js/emscripten/emcc -E
+configure:7908: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 configure:7908: $? = 0
-configure:7922: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:7922: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 conftest.c:9:10: fatal error: 'ac_nonexistent.h' file not found
 #include <ac_nonexistent.h>
          ^
@@ -230,79 +230,79 @@ configure: failed program was:
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
 configure:7951: checking for ANSI C header files
-configure:7971: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:7971: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:7971: $? = 0
-configure:8044: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:8044: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:8044: $? = 0
 configure:8044: ./conftest
 configure:8044: $? = 0
 configure:8055: result: yes
 configure:8068: checking for sys/types.h
-configure:8068: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:8068: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:8068: $? = 0
 configure:8068: result: yes
 configure:8068: checking for sys/stat.h
-configure:8068: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:8068: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:8068: $? = 0
 configure:8068: result: yes
 configure:8068: checking for stdlib.h
-configure:8068: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:8068: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:8068: $? = 0
 configure:8068: result: yes
 configure:8068: checking for string.h
-configure:8068: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:8068: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:8068: $? = 0
 configure:8068: result: yes
 configure:8068: checking for memory.h
-configure:8068: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:8068: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:8068: $? = 0
 configure:8068: result: yes
 configure:8068: checking for strings.h
-configure:8068: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:8068: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:8068: $? = 0
 configure:8068: result: yes
 configure:8068: checking for inttypes.h
-configure:8068: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:8068: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:8068: $? = 0
 configure:8068: result: yes
 configure:8068: checking for stdint.h
-configure:8068: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:8068: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:8068: $? = 0
 configure:8068: result: yes
 configure:8068: checking for unistd.h
-configure:8068: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:8068: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:8068: $? = 0
 configure:8068: result: yes
 configure:8082: checking for dlfcn.h
-configure:8082: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:8082: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:8082: $? = 0
 configure:8082: result: yes
 configure:8172: checking whether to enable maintainer-specific portions of Makefiles
 configure:8181: result: no
 configure:8688: checking for objdir
 configure:8703: result: .libs
-configure:8974: checking if /spin/WikiCite/bibtex.js/emscripten/emcc supports -fno-rtti -fno-exceptions
-configure:8992: /spin/WikiCite/bibtex.js/emscripten/emcc -c   -fno-rtti -fno-exceptions conftest.c >&5
+configure:8974: checking if /var/www/bibtex.js/emscripten/emcc supports -fno-rtti -fno-exceptions
+configure:8992: /var/www/bibtex.js/emscripten/emcc -c   -fno-rtti -fno-exceptions conftest.c >&5
 configure:8996: $? = 0
 configure:9009: result: yes
-configure:9336: checking for /spin/WikiCite/bibtex.js/emscripten/emcc option to produce PIC
+configure:9336: checking for /var/www/bibtex.js/emscripten/emcc option to produce PIC
 configure:9343: result: -fPIC -DPIC
-configure:9351: checking if /spin/WikiCite/bibtex.js/emscripten/emcc PIC flag -fPIC -DPIC works
-configure:9369: /spin/WikiCite/bibtex.js/emscripten/emcc -c   -fPIC -DPIC -DPIC conftest.c >&5
+configure:9351: checking if /var/www/bibtex.js/emscripten/emcc PIC flag -fPIC -DPIC works
+configure:9369: /var/www/bibtex.js/emscripten/emcc -c   -fPIC -DPIC -DPIC conftest.c >&5
 configure:9373: $? = 0
 configure:9386: result: yes
-configure:9415: checking if /spin/WikiCite/bibtex.js/emscripten/emcc static flag -static works
+configure:9415: checking if /var/www/bibtex.js/emscripten/emcc static flag -static works
 configure:9443: result: yes
-configure:9458: checking if /spin/WikiCite/bibtex.js/emscripten/emcc supports -c -o file.o
-configure:9479: /spin/WikiCite/bibtex.js/emscripten/emcc -c   -o out/conftest2.o conftest.c >&5
+configure:9458: checking if /var/www/bibtex.js/emscripten/emcc supports -c -o file.o
+configure:9479: /var/www/bibtex.js/emscripten/emcc -c   -o out/conftest2.o conftest.c >&5
 configure:9483: $? = 0
 configure:9505: result: yes
-configure:9513: checking if /spin/WikiCite/bibtex.js/emscripten/emcc supports -c -o file.o
+configure:9513: checking if /var/www/bibtex.js/emscripten/emcc supports -c -o file.o
 configure:9560: result: yes
-configure:9593: checking whether the /spin/WikiCite/bibtex.js/emscripten/emcc linker (/spin/WikiCite/bibtex.js/emscripten/emcc -m elf_i386) supports shared libraries
+configure:9593: checking whether the /var/www/bibtex.js/emscripten/emcc linker (/var/www/bibtex.js/emscripten/emcc -m elf_i386) supports shared libraries
 configure:10746: result: no
 configure:10986: checking dynamic linker characteristics
-configure:11497: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest     conftest.c  >&5
+configure:11497: /var/www/bibtex.js/emscripten/emcc -o conftest     conftest.c  >&5
 configure:11497: $? = 0
 configure:11719: result: GNU/Linux ld.so
 configure:11826: checking how to hardcode library paths into programs
@@ -318,7 +318,7 @@ configure:12464: result: yes
 configure:12508: checking for special C compiler options needed for large files
 configure:12553: result: no
 configure:12559: checking for _FILE_OFFSET_BITS value needed for large files
-configure:12584: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:12584: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 conftest.c:29:22: error: 'off_t_is_large' declared as an array with a negative size
   int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721
                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -363,7 +363,7 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:12608: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:12608: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 conftest.c:30:22: error: 'off_t_is_large' declared as an array with a negative size
   int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721
                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -411,7 +411,7 @@ configure: failed program was:
 | }
 configure:12616: result: unknown
 configure:12628: checking for _LARGE_FILES value needed for large files
-configure:12653: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:12653: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 conftest.c:29:22: error: 'off_t_is_large' declared as an array with a negative size
   int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721
                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -456,7 +456,7 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:12677: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:12677: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 conftest.c:30:22: error: 'off_t_is_large' declared as an array with a negative size
   int off_t_is_large[(LARGE_OFF_T % 2147483629 == 721
                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -504,51 +504,51 @@ configure: failed program was:
 | }
 configure:12685: result: unknown
 configure:12701: checking for _LARGEFILE_SOURCE value needed for large files
-configure:12720: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:12720: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:12720: $? = 0
 configure:12748: result: no
 configure:12772: checking for dirent.h that defines DIR
-configure:12791: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:12791: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:12791: $? = 0
 configure:12799: result: yes
 configure:12812: checking for library containing opendir
-configure:12843: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:12843: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:12843: $? = 0
 configure:12860: result: none required
 configure:12927: checking for ANSI C header files
 configure:13031: result: yes
 configure:13039: checking whether closedir returns void
-configure:13063: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13063: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:13063: $? = 0
 configure:13063: ./conftest
 configure:13063: $? = 0
 configure:13073: result: no
 configure:13085: checking assert.h usability
-configure:13085: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:13085: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:13085: $? = 0
 configure:13085: result: yes
 configure:13085: checking assert.h presence
-configure:13085: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:13085: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 configure:13085: $? = 0
 configure:13085: result: yes
 configure:13085: checking for assert.h
 configure:13085: result: yes
 configure:13085: checking float.h usability
-configure:13085: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:13085: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:13085: $? = 0
 configure:13085: result: yes
 configure:13085: checking float.h presence
-configure:13085: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:13085: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 configure:13085: $? = 0
 configure:13085: result: yes
 configure:13085: checking for float.h
 configure:13085: result: yes
 configure:13085: checking limits.h usability
-configure:13085: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:13085: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:13085: $? = 0
 configure:13085: result: yes
 configure:13085: checking limits.h presence
-configure:13085: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:13085: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 configure:13085: $? = 0
 configure:13085: result: yes
 configure:13085: checking for limits.h
@@ -556,11 +556,11 @@ configure:13085: result: yes
 configure:13085: checking for memory.h
 configure:13085: result: yes
 configure:13085: checking pwd.h usability
-configure:13085: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:13085: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:13085: $? = 0
 configure:13085: result: yes
 configure:13085: checking pwd.h presence
-configure:13085: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:13085: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 configure:13085: $? = 0
 configure:13085: result: yes
 configure:13085: checking for pwd.h
@@ -572,11 +572,11 @@ configure:13085: result: yes
 configure:13085: checking for strings.h
 configure:13085: result: yes
 configure:13085: checking sys/param.h usability
-configure:13085: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:13085: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:13085: $? = 0
 configure:13085: result: yes
 configure:13085: checking sys/param.h presence
-configure:13085: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:13085: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 configure:13085: $? = 0
 configure:13085: result: yes
 configure:13085: checking for sys/param.h
@@ -584,11 +584,11 @@ configure:13085: result: yes
 configure:13085: checking for unistd.h
 configure:13085: result: yes
 configure:13098: checking for putenv
-configure:13098: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13098: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:13098: $? = 0
 configure:13098: result: yes
 configure:13098: checking for strcasecmp
-configure:13098: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13098: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 conftest.c:60:6: warning: incompatible redeclaration of library function 'strcasecmp'
 char strcasecmp ();
      ^
@@ -597,11 +597,11 @@ conftest.c:60:6: note: 'strcasecmp' is a builtin with type 'int (const char *, c
 configure:13098: $? = 0
 configure:13098: result: yes
 configure:13098: checking for strtol
-configure:13098: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13098: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:13098: $? = 0
 configure:13098: result: yes
 configure:13098: checking for strstr
-configure:13098: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13098: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 conftest.c:62:6: warning: incompatible redeclaration of library function 'strstr'
 char strstr ();
      ^
@@ -610,15 +610,15 @@ conftest.c:62:6: note: 'strstr' is a builtin with type 'char *(const char *, con
 configure:13098: $? = 0
 configure:13098: result: yes
 configure:13110: checking for bcmp
-configure:13110: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13110: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:13110: $? = 0
 configure:13110: result: yes
 configure:13110: checking for bcopy
-configure:13110: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13110: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:13110: $? = 0
 configure:13110: result: yes
 configure:13110: checking for bzero
-configure:13110: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13110: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 conftest.c:65:6: warning: incompatible redeclaration of library function 'bzero'
 char bzero ();
      ^
@@ -627,15 +627,15 @@ conftest.c:65:6: note: 'bzero' is a builtin with type 'void (void *, unsigned in
 configure:13110: $? = 0
 configure:13110: result: yes
 configure:13110: checking for getcwd
-configure:13110: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13110: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:13110: $? = 0
 configure:13110: result: yes
 configure:13110: checking for getwd
-configure:13110: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13110: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:13110: $? = 0
 configure:13110: result: yes
 configure:13110: checking for index
-configure:13110: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13110: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 conftest.c:68:6: warning: incompatible redeclaration of library function 'index'
 char index ();
      ^
@@ -644,7 +644,7 @@ conftest.c:68:6: note: 'index' is a builtin with type 'char *(const char *, int)
 configure:13110: $? = 0
 configure:13110: result: yes
 configure:13110: checking for memcmp
-configure:13110: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13110: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 conftest.c:69:6: warning: incompatible redeclaration of library function 'memcmp'
 char memcmp ();
      ^
@@ -653,7 +653,7 @@ conftest.c:69:6: note: 'memcmp' is a builtin with type 'int (const void *, const
 configure:13110: $? = 0
 configure:13110: result: yes
 configure:13110: checking for memcpy
-configure:13110: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13110: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 conftest.c:70:6: warning: incompatible redeclaration of library function 'memcpy'
 char memcpy ();
      ^
@@ -662,15 +662,15 @@ conftest.c:70:6: note: 'memcpy' is a builtin with type 'void *(void *, const voi
 configure:13110: $? = 0
 configure:13110: result: yes
 configure:13110: checking for mkstemp
-configure:13110: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13110: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:13110: $? = 0
 configure:13110: result: yes
 configure:13110: checking for mktemp
-configure:13110: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13110: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:13110: $? = 0
 configure:13110: result: yes
 configure:13110: checking for rindex
-configure:13110: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13110: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 conftest.c:73:6: warning: incompatible redeclaration of library function 'rindex'
 char rindex ();
      ^
@@ -679,7 +679,7 @@ conftest.c:73:6: note: 'rindex' is a builtin with type 'char *(const char *, int
 configure:13110: $? = 0
 configure:13110: result: yes
 configure:13110: checking for strchr
-configure:13110: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13110: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 conftest.c:74:6: warning: incompatible redeclaration of library function 'strchr'
 char strchr ();
      ^
@@ -688,7 +688,7 @@ conftest.c:74:6: note: 'strchr' is a builtin with type 'char *(const char *, int
 configure:13110: $? = 0
 configure:13110: result: yes
 configure:13110: checking for strrchr
-configure:13110: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13110: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 conftest.c:75:6: warning: incompatible redeclaration of library function 'strrchr'
 char strrchr ();
      ^
@@ -697,17 +697,17 @@ conftest.c:75:6: note: 'strrchr' is a builtin with type 'char *(const char *, in
 configure:13110: $? = 0
 configure:13110: result: yes
 configure:13119: checking for an ANSI C-conforming const
-configure:13185: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:13185: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:13185: $? = 0
 configure:13192: result: yes
 configure:13200: checking for inline
-configure:13216: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:13216: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:13216: $? = 0
 configure:13224: result: inline
 configure:13242: checking for size_t
-configure:13242: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:13242: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:13242: $? = 0
-configure:13242: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:13242: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 conftest.c:89:21: error: expected expression
 if (sizeof ((size_t)))
                     ^
@@ -809,12 +809,12 @@ configure: failed program was:
 | }
 configure:13242: result: yes
 configure:13253: checking for struct stat.st_mtim
-configure:13253: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:13253: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 conftest.c:90:13: error: no member named 'st_mtim' in 'struct stat'; did you mean 'st_mtime'?
 if (ac_aggr.st_mtim)
             ^~~~~~~
             st_mtime
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/stat.h:50:10: note: 'st_mtime' declared here
+/var/www/bibtex.js/emscripten/system/include/libc/sys/stat.h:50:10: note: 'st_mtime' declared here
   time_t        st_mtime;
                 ^
 1 error generated.
@@ -914,12 +914,12 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:13253: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:13253: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 conftest.c:90:20: error: no member named 'st_mtim' in 'struct stat'; did you mean 'st_mtime'?
 if (sizeof ac_aggr.st_mtim)
                    ^~~~~~~
                    st_mtime
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/stat.h:50:10: note: 'st_mtime' declared here
+/var/www/bibtex.js/emscripten/system/include/libc/sys/stat.h:50:10: note: 'st_mtime' declared here
   time_t        st_mtime;
                 ^
 1 error generated.
@@ -1021,46 +1021,46 @@ configure: failed program was:
 | }
 configure:13253: result: no
 configure:13263: checking whether the compiler accepts prototypes
-configure:13279: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:13279: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:13279: $? = 0
 configure:13287: result: yes
 configure:13292: checking what warning flags to pass to the C compiler
 configure:13337: result: -Wimplicit -Wreturn-type -Wdeclaration-after-statement -Wno-unknown-pragmas
 configure:13474: checking for C++ compiler version
-configure:13483: /spin/WikiCite/bibtex.js/emscripten/em++ --version >&5
+configure:13483: /var/www/bibtex.js/emscripten/em++ --version >&5
 emcc (Emscripten GCC-like replacement) 2.0
 Copyright (C) 2012 the Emscripten authors.
 This is free and open source software under the MIT license.
 There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
   
 configure:13494: $? = 0
-configure:13483: /spin/WikiCite/bibtex.js/emscripten/em++ -v >&5
+configure:13483: /var/www/bibtex.js/emscripten/em++ -v >&5
 emcc (Emscripten GCC-like replacement + linker emulating GNU ld ) 2.0
 clang version 3.2 (tags/RELEASE_32/final)
 Target: i386-pc-linux-gnu
 Thread model: posix
 configure:13494: $? = 0
-configure:13483: /spin/WikiCite/bibtex.js/emscripten/em++ -V >&5
+configure:13483: /var/www/bibtex.js/emscripten/em++ -V >&5
 clang: error: unsupported option '-V -nostdinc'
 clang: error: no input files
 configure:13494: $? = 1
-configure:13483: /spin/WikiCite/bibtex.js/emscripten/em++ -qversion >&5
+configure:13483: /var/www/bibtex.js/emscripten/em++ -qversion >&5
 clang: error: no input files
 configure:13494: $? = 1
 configure:13498: checking whether we are using the GNU C++ compiler
-configure:13517: /spin/WikiCite/bibtex.js/emscripten/em++ -c   conftest.cpp >&5
+configure:13517: /var/www/bibtex.js/emscripten/em++ -c   conftest.cpp >&5
 configure:13517: $? = 0
 configure:13526: result: yes
-configure:13535: checking whether /spin/WikiCite/bibtex.js/emscripten/em++ accepts -g
-configure:13555: /spin/WikiCite/bibtex.js/emscripten/em++ -c -g  conftest.cpp >&5
+configure:13535: checking whether /var/www/bibtex.js/emscripten/em++ accepts -g
+configure:13555: /var/www/bibtex.js/emscripten/em++ -c -g  conftest.cpp >&5
 configure:13555: $? = 0
 configure:13596: result: yes
-configure:13621: checking dependency style of /spin/WikiCite/bibtex.js/emscripten/em++
+configure:13621: checking dependency style of /var/www/bibtex.js/emscripten/em++
 configure:13732: result: gcc3
 configure:13765: checking how to run the C++ preprocessor
-configure:13792: /spin/WikiCite/bibtex.js/emscripten/em++ -E  conftest.cpp
+configure:13792: /var/www/bibtex.js/emscripten/em++ -E  conftest.cpp
 configure:13792: $? = 0
-configure:13806: /spin/WikiCite/bibtex.js/emscripten/em++ -E  conftest.cpp
+configure:13806: /var/www/bibtex.js/emscripten/em++ -E  conftest.cpp
 conftest.cpp:53:10: fatal error: 'ac_nonexistent.h' file not found
 #include <ac_nonexistent.h>
          ^
@@ -1120,10 +1120,10 @@ configure: failed program was:
 | #define HAVE_STRRCHR 1
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:13831: result: /spin/WikiCite/bibtex.js/emscripten/em++ -E
-configure:13851: /spin/WikiCite/bibtex.js/emscripten/em++ -E  conftest.cpp
+configure:13831: result: /var/www/bibtex.js/emscripten/em++ -E
+configure:13851: /var/www/bibtex.js/emscripten/em++ -E  conftest.cpp
 configure:13851: $? = 0
-configure:13865: /spin/WikiCite/bibtex.js/emscripten/em++ -E  conftest.cpp
+configure:13865: /var/www/bibtex.js/emscripten/em++ -E  conftest.cpp
 conftest.cpp:53:10: fatal error: 'ac_nonexistent.h' file not found
 #include <ac_nonexistent.h>
          ^
@@ -1183,29 +1183,29 @@ configure: failed program was:
 | #define HAVE_STRRCHR 1
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:14034: checking for ld used by /spin/WikiCite/bibtex.js/emscripten/em++
-configure:14101: result: /spin/WikiCite/bibtex.js/emscripten/emcc -m elf_i386
-configure:14108: checking if the linker (/spin/WikiCite/bibtex.js/emscripten/emcc -m elf_i386) is GNU ld
+configure:14034: checking for ld used by /var/www/bibtex.js/emscripten/em++
+configure:14101: result: /var/www/bibtex.js/emscripten/emcc -m elf_i386
+configure:14108: checking if the linker (/var/www/bibtex.js/emscripten/emcc -m elf_i386) is GNU ld
 configure:14123: result: no
-configure:14178: checking whether the /spin/WikiCite/bibtex.js/emscripten/em++ linker (/spin/WikiCite/bibtex.js/emscripten/emcc -m elf_i386) supports shared libraries
+configure:14178: checking whether the /var/www/bibtex.js/emscripten/em++ linker (/var/www/bibtex.js/emscripten/emcc -m elf_i386) supports shared libraries
 configure:15183: result: yes
-configure:15219: /spin/WikiCite/bibtex.js/emscripten/em++ -c -g -O2  conftest.cpp >&5
+configure:15219: /var/www/bibtex.js/emscripten/em++ -c -g -O2  conftest.cpp >&5
 configure:15222: $? = 0
-configure:15742: checking for /spin/WikiCite/bibtex.js/emscripten/em++ option to produce PIC
+configure:15742: checking for /var/www/bibtex.js/emscripten/em++ option to produce PIC
 configure:15749: result: -fPIC -DPIC
-configure:15757: checking if /spin/WikiCite/bibtex.js/emscripten/em++ PIC flag -fPIC -DPIC works
-configure:15775: /spin/WikiCite/bibtex.js/emscripten/em++ -c -g -O2  -fPIC -DPIC -DPIC conftest.cpp >&5
+configure:15757: checking if /var/www/bibtex.js/emscripten/em++ PIC flag -fPIC -DPIC works
+configure:15775: /var/www/bibtex.js/emscripten/em++ -c -g -O2  -fPIC -DPIC -DPIC conftest.cpp >&5
 configure:15779: $? = 0
 configure:15792: result: yes
-configure:15815: checking if /spin/WikiCite/bibtex.js/emscripten/em++ static flag -static works
+configure:15815: checking if /var/www/bibtex.js/emscripten/em++ static flag -static works
 configure:15843: result: no
-configure:15855: checking if /spin/WikiCite/bibtex.js/emscripten/em++ supports -c -o file.o
-configure:15876: /spin/WikiCite/bibtex.js/emscripten/em++ -c -g -O2  -o out/conftest2.o conftest.cpp >&5
+configure:15855: checking if /var/www/bibtex.js/emscripten/em++ supports -c -o file.o
+configure:15876: /var/www/bibtex.js/emscripten/em++ -c -g -O2  -o out/conftest2.o conftest.cpp >&5
 configure:15880: $? = 0
 configure:15902: result: yes
-configure:15907: checking if /spin/WikiCite/bibtex.js/emscripten/em++ supports -c -o file.o
+configure:15907: checking if /var/www/bibtex.js/emscripten/em++ supports -c -o file.o
 configure:15954: result: yes
-configure:15984: checking whether the /spin/WikiCite/bibtex.js/emscripten/em++ linker (/spin/WikiCite/bibtex.js/emscripten/emcc -m elf_i386) supports shared libraries
+configure:15984: checking whether the /var/www/bibtex.js/emscripten/em++ linker (/var/www/bibtex.js/emscripten/emcc -m elf_i386) supports shared libraries
 configure:16020: result: yes
 configure:16161: checking dynamic linker characteristics
 configure:16828: result: GNU/Linux ld.so
@@ -1509,14 +1509,13 @@ configure:17219: result: no
 configure:17241: checking what warning flags to pass to the Objective C++ compiler
 configure:17282: result: 
 configure:17686: checking for kpsewhich
-configure:17702: found /usr/bin/kpsewhich
-configure:17713: result: kpsewhich
+configure:17716: result: no
 configure:17726: checking whether gcc asm needs underscore
-configure:17757: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:17757: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:17757: $? = 0
 configure:17765: result: no
 configure:17773: checking for native WIN32 or MINGW32
-configure:17791: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:17791: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 conftest.c:55:3: error: unknown type name 'choke'
   choke me
   ^
@@ -1592,24 +1591,24 @@ configure: failed program was:
 | }
 configure:17816: result: no
 configure:17875: checking for library containing connect
-configure:17906: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:17906: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:17906: $? = 0
 configure:17923: result: none required
 configure:18015: checking for library containing gethostbyname
-configure:18046: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:18046: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:18046: $? = 0
 configure:18063: result: none required
 configure:18071: checking for library containing inet_aton
-configure:18102: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:18102: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:18102: $? = 0
 configure:18119: result: none required
 configure:18128: checking for library containing nanosleep
-configure:18159: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:18159: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:18159: $? = 0
 configure:18176: result: none required
 configure:18185: checking for library containing dlopen
-configure:18216: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
-/tmp/conftest-AWiF5s.o: In function `main':
+configure:18216: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+/tmp/conftest-gjkgEJ.o: In function `main':
 conftest.c:(.text+0xe): undefined reference to `dlopen'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:18216: $? = 1
@@ -1684,13 +1683,13 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:18216: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -ldl   >&5
+configure:18216: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -ldl   >&5
 configure:18216: $? = 0
 configure:18233: result: -ldl
 configure:18244: checking for dlfcn.h
 configure:18244: result: yes
 configure:18316: checking for Mac OS X Carbon framework
-configure:18332: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:18332: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 conftest.c:57:10: fatal error: 'Carbon/Carbon.h' file not found
 #include <Carbon/Carbon.h>
          ^
@@ -1766,7 +1765,7 @@ configure:18390: checking for pkg-config
 configure:18406: found /usr/bin/pkg-config
 configure:18417: result: pkg-config
 configure:18449: checking for installed fontconfig headers and library
-configure:18482: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest     conftest.c -lfontconfig  >&5
+configure:18482: /var/www/bibtex.js/emscripten/emcc -o conftest     conftest.c -lfontconfig  >&5
 conftest.c:57:10: fatal error: 'fontconfig/fontconfig.h' file not found
 #include <fontconfig/fontconfig.h>
          ^
@@ -1858,29 +1857,29 @@ configure:19771: result: no
 configure:19741: checking for lex
 configure:19771: result: no
 configure:19956: checking whether char is unsigned
-configure:19975: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:19975: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:19975: $? = 0
 configure:19982: result: no
 configure:19993: checking size of int
-configure:19998: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:19998: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:19998: $? = 0
 configure:19998: ./conftest
 configure:19998: $? = 0
 configure:20012: result: 4
 configure:20029: checking size of long
-configure:20034: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:20034: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 configure:20034: $? = 0
 configure:20034: ./conftest
 configure:20034: $? = 0
 configure:20048: result: 4
 configure:20058: checking for library containing pow
-configure:20089: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
+configure:20089: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c  >&5
 conftest.c:67:6: warning: incompatible redeclaration of library function 'pow'
 char pow ();
      ^
 conftest.c:67:6: note: 'pow' is a builtin with type 'double (double, double)'
 1 warning generated.
-/tmp/conftest-QxuJLo.o: In function `main':
+/tmp/conftest-gfG3AM.o: In function `main':
 conftest.c:(.text+0xe): undefined reference to `pow'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:20089: $? = 1
@@ -1959,7 +1958,7 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:20089: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm   >&5
+configure:20089: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm   >&5
 conftest.c:67:6: warning: incompatible redeclaration of library function 'pow'
 char pow ();
      ^
@@ -1968,15 +1967,15 @@ conftest.c:67:6: note: 'pow' is a builtin with type 'double (double, double)'
 configure:20089: $? = 0
 configure:20106: result: -lm
 configure:20117: checking for access
-configure:20117: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
+configure:20117: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
 configure:20117: $? = 0
 configure:20117: result: yes
 configure:20117: checking for atoi
-configure:20117: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
+configure:20117: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
 configure:20117: $? = 0
 configure:20117: result: yes
 configure:20117: checking for fmax
-configure:20117: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
+configure:20117: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
 conftest.c:85:6: warning: incompatible redeclaration of library function 'fmax'
 char fmax ();
      ^
@@ -1985,23 +1984,23 @@ conftest.c:85:6: note: 'fmax' is a builtin with type 'double (double, double)'
 configure:20117: $? = 0
 configure:20117: result: yes
 configure:20117: checking for ftime
-configure:20117: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
+configure:20117: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
 configure:20117: $? = 0
 configure:20117: result: yes
 configure:20117: checking for gettimeofday
-configure:20117: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
+configure:20117: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
 configure:20117: $? = 0
 configure:20117: result: yes
 configure:20117: checking for mkdtemp
-configure:20117: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
+configure:20117: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
 configure:20117: $? = 0
 configure:20117: result: yes
 configure:20117: checking for setlocale
-configure:20117: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
+configure:20117: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
 configure:20117: $? = 0
 configure:20117: result: yes
 configure:20117: checking for snprintf
-configure:20117: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
+configure:20117: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
 conftest.c:90:6: warning: incompatible redeclaration of library function 'snprintf'
 char snprintf ();
      ^
@@ -2010,7 +2009,7 @@ conftest.c:90:6: note: 'snprintf' is a builtin with type 'int (char *, unsigned 
 configure:20117: $? = 0
 configure:20117: result: yes
 configure:20117: checking for strerror
-configure:20117: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
+configure:20117: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
 conftest.c:91:6: warning: incompatible redeclaration of library function 'strerror'
 char strerror ();
      ^
@@ -2019,13 +2018,13 @@ conftest.c:91:6: note: 'strerror' is a builtin with type 'char *(int)'
 configure:20117: $? = 0
 configure:20117: result: yes
 configure:20117: checking for strlcat
-configure:20117: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
+configure:20117: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
 conftest.c:92:6: warning: incompatible redeclaration of library function 'strlcat'
 char strlcat ();
      ^
 conftest.c:92:6: note: 'strlcat' is a builtin with type 'unsigned int (char *, const char *, unsigned int)'
 1 warning generated.
-/tmp/conftest-gnTcg7.o: In function `main':
+/tmp/conftest-LKcXBh.o: In function `main':
 conftest.c:(.text+0xe): undefined reference to `strlcat'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:20117: $? = 1
@@ -2138,13 +2137,13 @@ configure: failed program was:
 | }
 configure:20117: result: no
 configure:20117: checking for strlcpy
-configure:20117: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
+configure:20117: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
 conftest.c:92:6: warning: incompatible redeclaration of library function 'strlcpy'
 char strlcpy ();
      ^
 conftest.c:92:6: note: 'strlcpy' is a builtin with type 'unsigned int (char *, const char *, unsigned int)'
 1 warning generated.
-/tmp/conftest-231Weg.o: In function `main':
+/tmp/conftest-tyouEq.o: In function `main':
 conftest.c:(.text+0xe): undefined reference to `strlcpy'
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:20117: $? = 1
@@ -2257,71 +2256,71 @@ configure: failed program was:
 | }
 configure:20117: result: no
 configure:20129: checking errno.h usability
-configure:20129: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:20129: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:20129: $? = 0
 configure:20129: result: yes
 configure:20129: checking errno.h presence
-configure:20129: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:20129: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 configure:20129: $? = 0
 configure:20129: result: yes
 configure:20129: checking for errno.h
 configure:20129: result: yes
 configure:20129: checking langinfo.h usability
-configure:20129: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:20129: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:20129: $? = 0
 configure:20129: result: yes
 configure:20129: checking langinfo.h presence
-configure:20129: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:20129: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 configure:20129: $? = 0
 configure:20129: result: yes
 configure:20129: checking for langinfo.h
 configure:20129: result: yes
 configure:20129: checking locale.h usability
-configure:20129: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:20129: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:20129: $? = 0
 configure:20129: result: yes
 configure:20129: checking locale.h presence
-configure:20129: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:20129: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 configure:20129: $? = 0
 configure:20129: result: yes
 configure:20129: checking for locale.h
 configure:20129: result: yes
 configure:20129: checking sys/time.h usability
-configure:20129: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:20129: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:20129: $? = 0
 configure:20129: result: yes
 configure:20129: checking sys/time.h presence
-configure:20129: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:20129: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 configure:20129: $? = 0
 configure:20129: result: yes
 configure:20129: checking for sys/time.h
 configure:20129: result: yes
 configure:20129: checking sys/timeb.h usability
-configure:20129: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:20129: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:20129: $? = 0
 configure:20129: result: yes
 configure:20129: checking sys/timeb.h presence
-configure:20129: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:20129: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 configure:20129: $? = 0
 configure:20129: result: yes
 configure:20129: checking for sys/timeb.h
 configure:20129: result: yes
 configure:20129: checking sys/wait.h usability
-configure:20129: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:20129: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:20129: $? = 0
 configure:20129: result: yes
 configure:20129: checking sys/wait.h presence
-configure:20129: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:20129: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 configure:20129: $? = 0
 configure:20129: result: yes
 configure:20129: checking for sys/wait.h
 configure:20129: result: yes
 configure:20129: checking time.h usability
-configure:20129: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:20129: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:20129: $? = 0
 configure:20129: result: yes
 configure:20129: checking time.h presence
-configure:20129: /spin/WikiCite/bibtex.js/emscripten/emcc -E  conftest.c
+configure:20129: /var/www/bibtex.js/emscripten/emcc -E  conftest.c
 configure:20129: $? = 0
 configure:20129: result: yes
 configure:20129: checking for time.h
@@ -2329,15 +2328,15 @@ configure:20129: result: yes
 configure:20140: checking for long double
 configure:20173: result: yes
 configure:20182: checking for long long int
-configure:20219: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
+configure:20219: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
 configure:20219: $? = 0
-configure:20249: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
+configure:20249: /var/www/bibtex.js/emscripten/emcc -o conftest    conftest.c -lm  >&5
 configure:20249: $? = 0
 configure:20249: ./conftest
 configure:20249: $? = 0
 configure:20264: result: yes
 configure:20273: checking whether byte ordering is bigendian
-configure:20288: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:20288: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 conftest.c:79:9: error: unknown type name 'not'
                not a universal capable compiler
                ^
@@ -2430,9 +2429,9 @@ configure: failed program was:
 | 	     #endif
 | 	     typedef int dummy;
 | 
-configure:20333: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:20333: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 configure:20333: $? = 0
-configure:20351: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:20351: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 conftest.c:85:4: error: use of undeclared identifier 'not'
                  not big endian
                  ^
@@ -2531,7 +2530,7 @@ configure: failed program was:
 | }
 configure:20479: result: no
 configure:20498: checking return type of signal handlers
-configure:20516: /spin/WikiCite/bibtex.js/emscripten/emcc -c   conftest.c >&5
+configure:20516: /var/www/bibtex.js/emscripten/emcc -c   conftest.c >&5
 conftest.c:84:8: error: indirection requires pointer operand ('void' invalid)
 return *(signal (0, 0)) (0) == 1;
        ^~~~~~~~~~~~~~~~~~~~
@@ -2633,9 +2632,9 @@ configure:20541: creating ./config.lt
 ## ------------------ ##
 config.lt:680: creating libtool
 configure:22231: checking if libkpathsea supports debugging
-configure:22250: ./libtool --mode=link --tag=CC /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest  -I/spin/WikiCite/bibtex.js/build/texk -I/spin/WikiCite/bibtex.js/src/texk   conftest.c /spin/WikiCite/bibtex.js/build/texk/kpathsea/libkpathsea.la -lm  >&5
-libtool: link: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest -I/spin/WikiCite/bibtex.js/build/texk -I/spin/WikiCite/bibtex.js/src/texk conftest.c  /spin/WikiCite/bibtex.js/build/texk/kpathsea/.libs/libkpathsea.a -lm
-/spin/WikiCite/bibtex.js/build/texk/kpathsea/.libs/libkpathsea.a: could not read symbols: Archive has no index; run ranlib to add one
+configure:22250: ./libtool --mode=link --tag=CC /var/www/bibtex.js/emscripten/emcc -o conftest  -I/var/www/bibtex.js/build/texk -I/var/www/bibtex.js/src/texk   conftest.c /var/www/bibtex.js/build/texk/kpathsea/libkpathsea.la -lm  >&5
+libtool: link: /var/www/bibtex.js/emscripten/emcc -o conftest -I/var/www/bibtex.js/build/texk -I/var/www/bibtex.js/src/texk conftest.c  /var/www/bibtex.js/build/texk/kpathsea/.libs/libkpathsea.a -lm
+/var/www/bibtex.js/build/texk/kpathsea/.libs/libkpathsea.a: could not read symbols: Archive has no index; run ranlib to add one
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:22250: $? = 1
 configure: failed program was:
@@ -2730,9 +2729,9 @@ configure:22501: checking for freetype-config
 configure:22517: found /usr/bin/freetype-config
 configure:22528: result: freetype-config
 configure:22638: checking size of off_t
-configure:22643: ./libtool --mode=link --tag=CC /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest  -I/spin/WikiCite/bibtex.js/build/texk -I/spin/WikiCite/bibtex.js/src/texk -DNO_DEBUG   conftest.c /spin/WikiCite/bibtex.js/build/texk/kpathsea/libkpathsea.la -lm  >&5
-libtool: link: /spin/WikiCite/bibtex.js/emscripten/emcc -o conftest -I/spin/WikiCite/bibtex.js/build/texk -I/spin/WikiCite/bibtex.js/src/texk -DNO_DEBUG conftest.c  /spin/WikiCite/bibtex.js/build/texk/kpathsea/.libs/libkpathsea.a -lm
-/spin/WikiCite/bibtex.js/build/texk/kpathsea/.libs/libkpathsea.a: could not read symbols: Archive has no index; run ranlib to add one
+configure:22643: ./libtool --mode=link --tag=CC /var/www/bibtex.js/emscripten/emcc -o conftest  -I/var/www/bibtex.js/build/texk -I/var/www/bibtex.js/src/texk -DNO_DEBUG   conftest.c /var/www/bibtex.js/build/texk/kpathsea/libkpathsea.la -lm  >&5
+libtool: link: /var/www/bibtex.js/emscripten/emcc -o conftest -I/var/www/bibtex.js/build/texk -I/var/www/bibtex.js/src/texk -DNO_DEBUG conftest.c  /var/www/bibtex.js/build/texk/kpathsea/.libs/libkpathsea.a -lm
+/var/www/bibtex.js/build/texk/kpathsea/.libs/libkpathsea.a: could not read symbols: Archive has no index; run ranlib to add one
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 configure:22643: $? = 1
 configure: program exited with status 1
@@ -2884,7 +2883,7 @@ configure: failed program was:
 | }
 configure:22659: result: 0
 configure:22681: checking for Annot::decRefCnt
-configure:22700: /spin/WikiCite/bibtex.js/emscripten/em++ -c -g -O2 -I/spin/WikiCite/bibtex.js/build/libs/poppler -I/spin/WikiCite/bibtex.js/build/libs/poppler/goo -I/spin/WikiCite/bibtex.js/build/libs/poppler/poppler -I/spin/WikiCite/bibtex.js/build/texk -I/spin/WikiCite/bibtex.js/src/texk -DNO_DEBUG  conftest.cpp >&5
+configure:22700: /var/www/bibtex.js/emscripten/em++ -c -g -O2 -I/var/www/bibtex.js/build/libs/poppler -I/var/www/bibtex.js/build/libs/poppler/goo -I/var/www/bibtex.js/build/libs/poppler/poppler -I/var/www/bibtex.js/build/texk -I/var/www/bibtex.js/src/texk -DNO_DEBUG  conftest.cpp >&5
 conftest.cpp:80:10: fatal error: 'goo/GooString.h' file not found
 #include <goo/GooString.h>
          ^
@@ -3001,24 +3000,24 @@ generated by GNU Autoconf 2.69.  Invocation command line was
 
 on chunk
 
-config.status:1409: creating Makefile
-config.status:1409: creating doc/Makefile
-config.status:1409: creating lib/Makefile
-config.status:1409: creating man/Makefile
-config.status:1409: creating omegafonts/Makefile
-config.status:1409: creating otps/Makefile
-config.status:1409: creating otps/win32/Makefile
-config.status:1409: creating window/Makefile
-config.status:1409: creating web2c-sh
-config.status:1409: creating tangle-sh
-config.status:1409: creating ctangleboot-sh
-config.status:1409: creating w2c/c-auto.h
-config.status:1409: creating ff-config.h
-config.status:1575: ff-config.h is unchanged
-config.status:1623: executing depfiles commands
-config.status:1623: executing libtool commands
-configure:25962: === configuring in web2c (/spin/WikiCite/bibtex.js/build/texk/web2c/web2c)
-configure:26025: running /bin/bash ../../../../src/texk/web2c/web2c/configure --disable-option-checking '--prefix=/usr/local'  '--without-x' '--disable-shared' 'CC=/spin/WikiCite/bibtex.js/emscripten/emcc' 'CFLAGS=' 'CXX=/spin/WikiCite/bibtex.js/emscripten/em++' --cache-file=/dev/null --srcdir=../../../../src/texk/web2c/web2c
+config.status:1407: creating Makefile
+config.status:1407: creating doc/Makefile
+config.status:1407: creating lib/Makefile
+config.status:1407: creating man/Makefile
+config.status:1407: creating omegafonts/Makefile
+config.status:1407: creating otps/Makefile
+config.status:1407: creating otps/win32/Makefile
+config.status:1407: creating window/Makefile
+config.status:1407: creating web2c-sh
+config.status:1407: creating tangle-sh
+config.status:1407: creating ctangleboot-sh
+config.status:1407: creating w2c/c-auto.h
+config.status:1407: creating ff-config.h
+config.status:1573: ff-config.h is unchanged
+config.status:1621: executing depfiles commands
+config.status:1621: executing libtool commands
+configure:25962: === configuring in web2c (/var/www/bibtex.js/build/texk/web2c/web2c)
+configure:26025: running /bin/bash ../../../../src/texk/web2c/web2c/configure --disable-option-checking '--prefix=/usr/local'  '--without-x' '--disable-shared' 'CC=/var/www/bibtex.js/emscripten/emcc' 'CFLAGS=' 'CXX=/var/www/bibtex.js/emscripten/em++' --cache-file=/dev/null --srcdir=../../../../src/texk/web2c/web2c
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -3034,7 +3033,7 @@ ac_cv_cxx_compiler_gnu=yes
 ac_cv_env_CCC_set=
 ac_cv_env_CCC_value=
 ac_cv_env_CC_set=set
-ac_cv_env_CC_value=/spin/WikiCite/bibtex.js/emscripten/emcc
+ac_cv_env_CC_value=/var/www/bibtex.js/emscripten/emcc
 ac_cv_env_CFLAGS_set=set
 ac_cv_env_CFLAGS_value=
 ac_cv_env_CPPFLAGS_set=
@@ -3046,7 +3045,7 @@ ac_cv_env_CXXCPP_value=
 ac_cv_env_CXXFLAGS_set=
 ac_cv_env_CXXFLAGS_value=
 ac_cv_env_CXX_set=set
-ac_cv_env_CXX_value=/spin/WikiCite/bibtex.js/emscripten/em++
+ac_cv_env_CXX_value=/var/www/bibtex.js/emscripten/em++
 ac_cv_env_LDFLAGS_set=
 ac_cv_env_LDFLAGS_value=
 ac_cv_env_LIBS_set=
@@ -3131,16 +3130,15 @@ ac_cv_path_SED=/bin/sed
 ac_cv_path_install='/usr/bin/install -c'
 ac_cv_path_mkdir=/bin/mkdir
 ac_cv_prog_AWK=mawk
-ac_cv_prog_CPP='/spin/WikiCite/bibtex.js/emscripten/emcc -E'
-ac_cv_prog_CXXCPP='/spin/WikiCite/bibtex.js/emscripten/em++ -E'
-ac_cv_prog_KPSEWHICH=kpsewhich
-ac_cv_prog_ac_ct_CC=/spin/WikiCite/bibtex.js/emscripten/emcc
+ac_cv_prog_CPP='/var/www/bibtex.js/emscripten/emcc -E'
+ac_cv_prog_CXXCPP='/var/www/bibtex.js/emscripten/em++ -E'
+ac_cv_prog_ac_ct_CC=/var/www/bibtex.js/emscripten/emcc
 ac_cv_prog_ac_ct_FT2_CONFIG=freetype-config
 ac_cv_prog_ac_ct_MANIFEST_TOOL=mt
 ac_cv_prog_ac_ct_OBJCXX=g++
 ac_cv_prog_ac_ct_OBJDUMP=objdump
 ac_cv_prog_ac_ct_PKG_CONFIG=pkg-config
-ac_cv_prog_ac_ct_RANLIB=/spin/WikiCite/bibtex.js/emscripten/emranlib
+ac_cv_prog_ac_ct_RANLIB=/var/www/bibtex.js/emscripten/emranlib
 ac_cv_prog_ac_ct_STRIP=strip
 ac_cv_prog_cc_c89=
 ac_cv_prog_cc_g=yes
@@ -3185,8 +3183,8 @@ lt_cv_file_magic_test_file=
 lt_cv_ld_reload_flag=-r
 lt_cv_nm_interface='BSD nm'
 lt_cv_objdir=.libs
-lt_cv_path_LD=/spin/WikiCite/bibtex.js/emscripten/emcc
-lt_cv_path_LDCXX='/spin/WikiCite/bibtex.js/emscripten/emcc -m elf_i386'
+lt_cv_path_LD=/var/www/bibtex.js/emscripten/emcc
+lt_cv_path_LDCXX='/var/www/bibtex.js/emscripten/emcc -m elf_i386'
 lt_cv_path_NM='/usr/bin/nm -B'
 lt_cv_path_mainfest_tool=no
 lt_cv_prog_compiler_c_o=yes
@@ -3259,28 +3257,28 @@ ${top_builddir}/../../libs/xpdf/xpdf/Stream.h:
 ${top_builddir}/../../libs/zlib/include/zconf.h:
 ${top_builddir}/../../libs/zziplib/include/zzip/zzip.h:
 ${top_builddir}/../kpathsea/paths.h:
-ACLOCAL='${SHELL} /spin/WikiCite/bibtex.js/src/build-aux/missing --run aclocal-1.12'
+ACLOCAL='${SHELL} /var/www/bibtex.js/src/build-aux/missing --run aclocal-1.12'
 ALEPH_FALSE='#'
 ALEPH_TRUE=''
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
 AMTAR='$${TAR-tar}'
-AR='/spin/WikiCite/bibtex.js/emscripten/emar'
+AR='/var/www/bibtex.js/emscripten/emar'
 AS='as'
-AUTOCONF='${SHELL} /spin/WikiCite/bibtex.js/src/build-aux/missing --run autoconf'
-AUTOHEADER='${SHELL} /spin/WikiCite/bibtex.js/src/build-aux/missing --run autoheader'
-AUTOMAKE='${SHELL} /spin/WikiCite/bibtex.js/src/build-aux/missing --run automake-1.12'
+AUTOCONF='${SHELL} /var/www/bibtex.js/src/build-aux/missing --run autoconf'
+AUTOHEADER='${SHELL} /var/www/bibtex.js/src/build-aux/missing --run autoheader'
+AUTOMAKE='${SHELL} /var/www/bibtex.js/src/build-aux/missing --run automake-1.12'
 AWK='mawk'
-CC='/spin/WikiCite/bibtex.js/emscripten/emcc'
+CC='/var/www/bibtex.js/emscripten/emcc'
 CCDEPMODE='depmode=gcc3'
 CFLAGS=''
-CPP='/spin/WikiCite/bibtex.js/emscripten/emcc -E'
+CPP='/var/www/bibtex.js/emscripten/emcc -E'
 CPPFLAGS=''
 CTANGLE='./ctangle'
 CTANGLEBOOT='./ctangleboot'
-CXX='/spin/WikiCite/bibtex.js/emscripten/em++'
-CXXCPP='/spin/WikiCite/bibtex.js/emscripten/em++ -E'
+CXX='/var/www/bibtex.js/emscripten/em++'
+CXXCPP='/var/www/bibtex.js/emscripten/em++ -E'
 CXXDEPMODE='depmode=gcc3'
 CXXFLAGS='-g -O2'
 CXXLD='$(CXX)'
@@ -3311,38 +3309,38 @@ FGREP='/bin/grep -F'
 FONTCONFIG_INCLUDES=''
 FONTCONFIG_LIBS=''
 FREETYPE2_DEPEND='${top_builddir}/../../libs/freetype2/libfreetype.la'
-FREETYPE2_INCLUDES='`cat /spin/WikiCite/bibtex.js/build/libs/freetype2/ft-includes`'
-FREETYPE2_LIBS='`cat /spin/WikiCite/bibtex.js/build/libs/freetype2/ft-libs`'
+FREETYPE2_INCLUDES='`cat /var/www/bibtex.js/build/libs/freetype2/ft-includes`'
+FREETYPE2_LIBS='`cat /var/www/bibtex.js/build/libs/freetype2/ft-libs`'
 FREETYPE2_RULE='# Rebuild libfreetype
 FT2_CONFIG='freetype-config'
 GRAPHITE_DEPEND='${top_builddir}/../../libs/graphite/libgraphite.a'
-GRAPHITE_INCLUDES='-I/spin/WikiCite/bibtex.js/build/libs/graphite/include'
-GRAPHITE_LIBS='/spin/WikiCite/bibtex.js/build/libs/graphite/libgraphite.a'
+GRAPHITE_INCLUDES='-I/var/www/bibtex.js/build/libs/graphite/include'
+GRAPHITE_LIBS='/var/www/bibtex.js/build/libs/graphite/libgraphite.a'
 GRAPHITE_RULE='# Rebuild libgraphite
 GREP='/bin/grep'
 ICU_DEPEND='${top_builddir}/../../libs/icu/icu-build/lib/libicule.a ${top_builddir}/../../libs/icu/icu-build/lib/libicuuc.a ${top_builddir}/../../libs/icu/icu-build/lib/libicudata.a'
-ICU_INCLUDES='-DU_STATIC_IMPLEMENTATION -I/spin/WikiCite/bibtex.js/build/libs/icu/include'
-ICU_LIBS='/spin/WikiCite/bibtex.js/build/libs/icu/icu-build/lib/libicule.a /spin/WikiCite/bibtex.js/build/libs/icu/icu-build/lib/libicuuc.a /spin/WikiCite/bibtex.js/build/libs/icu/icu-build/lib/libicudata.a'
+ICU_INCLUDES='-DU_STATIC_IMPLEMENTATION -I/var/www/bibtex.js/build/libs/icu/include'
+ICU_LIBS='/var/www/bibtex.js/build/libs/icu/icu-build/lib/libicule.a /var/www/bibtex.js/build/libs/icu/icu-build/lib/libicuuc.a /var/www/bibtex.js/build/libs/icu/icu-build/lib/libicudata.a'
 ICU_RULE='# Rebuild libsicuxxx
 INSTALL_DATA='${INSTALL} -m 644'
 INSTALL_PROGRAM='${INSTALL}'
 INSTALL_SCRIPT='${INSTALL}'
 INSTALL_STRIP_PROGRAM='$(install_sh) -c -s'
 KPATHSEA_DEPEND='${top_builddir}/../kpathsea/libkpathsea.la'
-KPATHSEA_INCLUDES='-I/spin/WikiCite/bibtex.js/build/texk -I/spin/WikiCite/bibtex.js/src/texk -DNO_DEBUG'
-KPATHSEA_LIBS='/spin/WikiCite/bibtex.js/build/texk/kpathsea/libkpathsea.la'
+KPATHSEA_INCLUDES='-I/var/www/bibtex.js/build/texk -I/var/www/bibtex.js/src/texk -DNO_DEBUG'
+KPATHSEA_LIBS='/var/www/bibtex.js/build/texk/kpathsea/libkpathsea.la'
 KPATHSEA_PATHS_H='${top_builddir}/..'
 KPATHSEA_RULE='# Rebuild libkpathsea
-KPSEWHICH='kpsewhich'
-LD='/spin/WikiCite/bibtex.js/emscripten/emcc -m elf_i386'
+KPSEWHICH='false'
+LD='/var/www/bibtex.js/emscripten/emcc -m elf_i386'
 LDFLAGS=''
 LEX=':'
 LEXLIB=''
 LEX_OUTPUT_ROOT=''
 LIBOBJS=''
 LIBPNG_DEPEND='${top_builddir}/../../libs/libpng/libpng.a'
-LIBPNG_INCLUDES='-I/spin/WikiCite/bibtex.js/build/libs/libpng/include'
-LIBPNG_LIBS='/spin/WikiCite/bibtex.js/build/libs/libpng/libpng.a'
+LIBPNG_INCLUDES='-I/var/www/bibtex.js/build/libs/libpng/include'
+LIBPNG_LIBS='/var/www/bibtex.js/build/libs/libpng/libpng.a'
 LIBPNG_RULE='# Rebuild libpng
 LIBS='-lm '
 LIBTOOL='$(SHELL) $(top_builddir)/libtool'
@@ -3354,7 +3352,7 @@ LUATEX_TRUE=''
 MAINT='#'
 MAINTAINER_MODE_FALSE=''
 MAINTAINER_MODE_TRUE='#'
-MAKEINFO='${SHELL} /spin/WikiCite/bibtex.js/src/build-aux/missing --run makeinfo'
+MAKEINFO='${SHELL} /var/www/bibtex.js/src/build-aux/missing --run makeinfo'
 MANIFEST_TOOL=':'
 MFN_FALSE='#'
 MFN_TRUE=''
@@ -3374,8 +3372,8 @@ OBJCXXFLAGS=''
 OBJDUMP='objdump'
 OBJEXT='o'
 OBSDCOMPAT_DEPEND='${top_builddir}/../../libs/obsdcompat/libopenbsd-compat.a'
-OBSDCOMPAT_INCLUDES='-I/spin/WikiCite/bibtex.js/build/libs/obsdcompat -I/spin/WikiCite/bibtex.js/src/libs/obsdcompat'
-OBSDCOMPAT_LIBS='/spin/WikiCite/bibtex.js/build/libs/obsdcompat/libopenbsd-compat.a'
+OBSDCOMPAT_INCLUDES='-I/var/www/bibtex.js/build/libs/obsdcompat -I/var/www/bibtex.js/src/libs/obsdcompat'
+OBSDCOMPAT_LIBS='/var/www/bibtex.js/build/libs/obsdcompat/libopenbsd-compat.a'
 OBSDCOMPAT_RULE='# Rebuild libopenbsd-compat
 OMFONTS_FALSE='#'
 OMFONTS_TRUE=''
@@ -3398,12 +3396,12 @@ PDFTEX_SYNCTEX_TRUE=''
 PDFTEX_TRUE=''
 PKG_CONFIG='pkg-config'
 POPPLER_DEPEND='${top_builddir}/../../libs/poppler/libpoppler.a'
-POPPLER_INCLUDES='-I/spin/WikiCite/bibtex.js/build/libs/poppler -I/spin/WikiCite/bibtex.js/build/libs/poppler/goo -I/spin/WikiCite/bibtex.js/build/libs/poppler/poppler'
-POPPLER_LIBS='/spin/WikiCite/bibtex.js/build/libs/poppler/libpoppler.a'
+POPPLER_INCLUDES='-I/var/www/bibtex.js/build/libs/poppler -I/var/www/bibtex.js/build/libs/poppler/goo -I/var/www/bibtex.js/build/libs/poppler/poppler'
+POPPLER_LIBS='/var/www/bibtex.js/build/libs/poppler/libpoppler.a'
 POPPLER_RULE='# Rebuild libpoppler
 PTEXENC_DEPEND='${top_builddir}/../ptexenc/libptexenc.la'
-PTEXENC_INCLUDES='-I/spin/WikiCite/bibtex.js/build/texk/ptexenc -I/spin/WikiCite/bibtex.js/src/texk/ptexenc'
-PTEXENC_LIBS='/spin/WikiCite/bibtex.js/build/texk/ptexenc/libptexenc.la'
+PTEXENC_INCLUDES='-I/var/www/bibtex.js/build/texk/ptexenc -I/var/www/bibtex.js/src/texk/ptexenc'
+PTEXENC_LIBS='/var/www/bibtex.js/build/texk/ptexenc/libptexenc.la'
 PTEXENC_RULE='# Rebuild libptexenc
 PTEX_FALSE='#'
 PTEX_SYNCTEX_FALSE='#'
@@ -3411,7 +3409,7 @@ PTEX_SYNCTEX_TRUE=''
 PTEX_TRUE=''
 PWEB_FALSE='#'
 PWEB_TRUE=''
-RANLIB='/spin/WikiCite/bibtex.js/emscripten/emranlib'
+RANLIB='/var/www/bibtex.js/emscripten/emranlib'
 SED='/bin/sed'
 SET_MAKE=''
 SHELL='/bin/bash'
@@ -3419,8 +3417,8 @@ STRIP='strip'
 TANGLE='./tangle'
 TANGLEBOOT='./tangleboot'
 TECKIT_DEPEND='${top_builddir}/../../libs/teckit/libTECkit.a'
-TECKIT_INCLUDES='-I/spin/WikiCite/bibtex.js/build/libs/teckit/include'
-TECKIT_LIBS='/spin/WikiCite/bibtex.js/build/libs/teckit/libTECkit.a'
+TECKIT_INCLUDES='-I/var/www/bibtex.js/build/libs/teckit/include'
+TECKIT_LIBS='/var/www/bibtex.js/build/libs/teckit/libTECkit.a'
 TECKIT_RULE='# Rebuild libTECkit
 TEX_FALSE='#'
 TEX_SYNCTEX_FALSE=''
@@ -3452,8 +3450,8 @@ XETEX_SYNCTEX_TRUE=''
 XETEX_TRUE='#'
 XMKMF=''
 XPDF_DEPEND='${top_builddir}/../../libs/xpdf/libxpdf.a'
-XPDF_INCLUDES='-DPDF_PARSER_ONLY -I/spin/WikiCite/bibtex.js/build/libs/xpdf -I/spin/WikiCite/bibtex.js/build/libs/xpdf/goo -I/spin/WikiCite/bibtex.js/build/libs/xpdf/xpdf'
-XPDF_LIBS='/spin/WikiCite/bibtex.js/build/libs/xpdf/libxpdf.a'
+XPDF_INCLUDES='-DPDF_PARSER_ONLY -I/var/www/bibtex.js/build/libs/xpdf -I/var/www/bibtex.js/build/libs/xpdf/goo -I/var/www/bibtex.js/build/libs/xpdf/xpdf'
+XPDF_LIBS='/var/www/bibtex.js/build/libs/xpdf/libxpdf.a'
 XPDF_RULE='# Rebuild libxpdf
 X_CFLAGS=''
 X_EXTRA_LIBS=''
@@ -3462,15 +3460,15 @@ X_PRE_LIBS=''
 YACC='yacc'
 YFLAGS=''
 ZLIB_DEPEND='${top_builddir}/../../libs/zlib/libz.a'
-ZLIB_INCLUDES='-I/spin/WikiCite/bibtex.js/build/libs/zlib/include'
-ZLIB_LIBS='/spin/WikiCite/bibtex.js/build/libs/zlib/libz.a'
+ZLIB_INCLUDES='-I/var/www/bibtex.js/build/libs/zlib/include'
+ZLIB_LIBS='/var/www/bibtex.js/build/libs/zlib/libz.a'
 ZLIB_RULE='# Rebuild libz
 ZZIPLIB_DEPEND='${top_builddir}/../../libs/zziplib/libzzip.a'
-ZZIPLIB_INCLUDES='-I/spin/WikiCite/bibtex.js/build/libs/zziplib/include'
-ZZIPLIB_LIBS='/spin/WikiCite/bibtex.js/build/libs/zziplib/libzzip.a'
+ZZIPLIB_INCLUDES='-I/var/www/bibtex.js/build/libs/zziplib/include'
+ZZIPLIB_LIBS='/var/www/bibtex.js/build/libs/zziplib/libzzip.a'
 ZZIPLIB_RULE='# Rebuild libzzip
 ac_ct_AR=''
-ac_ct_CC='/spin/WikiCite/bibtex.js/emscripten/emcc'
+ac_ct_CC='/var/www/bibtex.js/emscripten/emcc'
 ac_ct_CXX=''
 ac_ct_DUMPBIN=''
 ac_ct_OBJCXX='g++'
@@ -3508,7 +3506,7 @@ host_vendor='unknown'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} /spin/WikiCite/bibtex.js/src/build-aux/install-sh'
+install_sh='${SHELL} /var/www/bibtex.js/src/build-aux/install-sh'
 ipc_socketlibs=''
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'

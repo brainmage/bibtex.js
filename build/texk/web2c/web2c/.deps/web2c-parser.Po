@@ -3,44 +3,44 @@ web2c-parser.o: ../../../../src/texk/web2c/web2c/web2c-parser.c \
   ../../../../src/texk/web2c/web2c/../../kpathsea/config.h \
   kpathsea/c-auto.h \
   ../../../../src/texk/web2c/web2c/../../kpathsea/c-std.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/math.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/reent.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/_ansi.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/newlib.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/config.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/machine/ieeefp.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/features.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/_types.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/machine/_types.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/machine/_default_types.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/lock.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/stddef.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/stdio.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/stdarg.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/types.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/machine/types.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/stdint.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/sched.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/stdio.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/math.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/reent.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/_ansi.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/newlib.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/config.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/machine/ieeefp.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/features.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/_types.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/machine/_types.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/machine/_default_types.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/lock.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/stddef.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/stdio.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/stdarg.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/types.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/machine/types.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/stdint.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/sched.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/stdio.h \
   ../../../../src/texk/web2c/web2c/../../kpathsea/c-unistd.h \
   ../../../../src/texk/web2c/web2c/../../kpathsea/systypes.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/unistd.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/unistd.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/stdlib.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/machine/stdlib.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/alloca.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/unistd.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/unistd.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/stdlib.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/machine/stdlib.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/alloca.h \
   ../../../../src/texk/web2c/web2c/../../kpathsea/c-memstr.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/string.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/string.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/string.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/string.h \
   ../../../../src/texk/web2c/web2c/../../kpathsea/c-errno.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/errno.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/errno.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/errno.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/errno.h \
   ../../../../src/texk/web2c/web2c/../../kpathsea/c-minmax.h \
   ../../../../src/texk/web2c/web2c/../../kpathsea/c-limits.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/limits.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/bsd/float.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/cdefs.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/assert.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/limits.h \
+  /var/www/bibtex.js/emscripten/system/include/bsd/float.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/cdefs.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/assert.h \
   ../../../../src/texk/web2c/web2c/../../kpathsea/c-proto.h \
   ../../../../src/texk/web2c/web2c/../../kpathsea/debug.h \
   ../../../../src/texk/web2c/web2c/../../kpathsea/types.h \
@@ -50,14 +50,14 @@ web2c-parser.o: ../../../../src/texk/web2c/web2c/web2c-parser.c \
   ../../../../src/texk/web2c/web2c/../../kpathsea/lib.h \
   ../../../../src/texk/web2c/web2c/../../kpathsea/progname.h \
   ../../../../src/texk/web2c/web2c/../../kpathsea/c-fopen.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/fcntl.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/fcntl.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/_default_fcntl.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/stat.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/time.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/machine/time.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/signal.h \
-  /spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/signal.h
+  /var/www/bibtex.js/emscripten/system/include/libc/fcntl.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/fcntl.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/_default_fcntl.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/stat.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/time.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/machine/time.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/signal.h \
+  /var/www/bibtex.js/emscripten/system/include/libc/sys/signal.h
 
 ../../../../src/texk/web2c/web2c/web2c.h:
 
@@ -69,81 +69,81 @@ kpathsea/c-auto.h:
 
 ../../../../src/texk/web2c/web2c/../../kpathsea/c-std.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/math.h:
+/var/www/bibtex.js/emscripten/system/include/libc/math.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/reent.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/reent.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/_ansi.h:
+/var/www/bibtex.js/emscripten/system/include/libc/_ansi.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/newlib.h:
+/var/www/bibtex.js/emscripten/system/include/libc/newlib.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/config.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/config.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/machine/ieeefp.h:
+/var/www/bibtex.js/emscripten/system/include/libc/machine/ieeefp.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/features.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/features.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/_types.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/_types.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/machine/_types.h:
+/var/www/bibtex.js/emscripten/system/include/libc/machine/_types.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/machine/_default_types.h:
+/var/www/bibtex.js/emscripten/system/include/libc/machine/_default_types.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/lock.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/lock.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/stddef.h:
+/var/www/bibtex.js/emscripten/system/include/libc/stddef.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/stdio.h:
+/var/www/bibtex.js/emscripten/system/include/libc/stdio.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/stdarg.h:
+/var/www/bibtex.js/emscripten/system/include/libc/stdarg.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/types.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/types.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/machine/types.h:
+/var/www/bibtex.js/emscripten/system/include/libc/machine/types.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/stdint.h:
+/var/www/bibtex.js/emscripten/system/include/libc/stdint.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/sched.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/sched.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/stdio.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/stdio.h:
 
 ../../../../src/texk/web2c/web2c/../../kpathsea/c-unistd.h:
 
 ../../../../src/texk/web2c/web2c/../../kpathsea/systypes.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/unistd.h:
+/var/www/bibtex.js/emscripten/system/include/libc/unistd.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/unistd.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/unistd.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/stdlib.h:
+/var/www/bibtex.js/emscripten/system/include/libc/stdlib.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/machine/stdlib.h:
+/var/www/bibtex.js/emscripten/system/include/libc/machine/stdlib.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/alloca.h:
+/var/www/bibtex.js/emscripten/system/include/libc/alloca.h:
 
 ../../../../src/texk/web2c/web2c/../../kpathsea/c-memstr.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/string.h:
+/var/www/bibtex.js/emscripten/system/include/libc/string.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/string.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/string.h:
 
 ../../../../src/texk/web2c/web2c/../../kpathsea/c-errno.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/errno.h:
+/var/www/bibtex.js/emscripten/system/include/libc/errno.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/errno.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/errno.h:
 
 ../../../../src/texk/web2c/web2c/../../kpathsea/c-minmax.h:
 
 ../../../../src/texk/web2c/web2c/../../kpathsea/c-limits.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/limits.h:
+/var/www/bibtex.js/emscripten/system/include/libc/limits.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/bsd/float.h:
+/var/www/bibtex.js/emscripten/system/include/bsd/float.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/cdefs.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/cdefs.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/assert.h:
+/var/www/bibtex.js/emscripten/system/include/libc/assert.h:
 
 ../../../../src/texk/web2c/web2c/../../kpathsea/c-proto.h:
 
@@ -163,18 +163,18 @@ kpathsea/c-auto.h:
 
 ../../../../src/texk/web2c/web2c/../../kpathsea/c-fopen.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/fcntl.h:
+/var/www/bibtex.js/emscripten/system/include/libc/fcntl.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/fcntl.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/fcntl.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/_default_fcntl.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/_default_fcntl.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/stat.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/stat.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/time.h:
+/var/www/bibtex.js/emscripten/system/include/libc/time.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/machine/time.h:
+/var/www/bibtex.js/emscripten/system/include/libc/machine/time.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/signal.h:
+/var/www/bibtex.js/emscripten/system/include/libc/signal.h:
 
-/spin/WikiCite/bibtex.js/emscripten/system/include/libc/sys/signal.h:
+/var/www/bibtex.js/emscripten/system/include/libc/sys/signal.h:

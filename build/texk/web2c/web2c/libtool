@@ -144,7 +144,7 @@ want_nocaseglob="no"
 sharedlib_from_linklib_cmd="printf %s\\n"
 
 # The archiver.
-AR="/spin/WikiCite/bibtex.js/emscripten/emar"
+AR="/var/www/bibtex.js/emscripten/emar"
 
 # Flags to create an archive.
 AR_FLAGS="cru"
@@ -156,7 +156,7 @@ archiver_list_spec=""
 STRIP="strip"
 
 # Commands used to install an old-style archive.
-RANLIB="/spin/WikiCite/bibtex.js/emscripten/emranlib"
+RANLIB="/var/www/bibtex.js/emscripten/emranlib"
 old_postinstall_cmds="chmod 644 \$oldlib~\$RANLIB \$tool_oldlib"
 old_postuninstall_cmds=""
 
@@ -164,7 +164,7 @@ old_postuninstall_cmds=""
 lock_old_archive_extraction=no
 
 # A C compiler.
-LTCC="/spin/WikiCite/bibtex.js/emscripten/emcc"
+LTCC="/var/www/bibtex.js/emscripten/emcc"
 
 # LTCC compiler flags.
 LTCFLAGS=""
@@ -295,7 +295,7 @@ striplib="strip --strip-unneeded"
 
 
 # The linker used to build libraries.
-LD="/spin/WikiCite/bibtex.js/emscripten/emcc -m elf_i386 -m elf_i386"
+LD="/var/www/bibtex.js/emscripten/emcc -m elf_i386 -m elf_i386"
 
 # How to create reloadable object files.
 reload_flag=" -r"
@@ -305,7 +305,7 @@ reload_cmds="\$LD\$reload_flag -o \$output\$reload_objs"
 old_archive_cmds="\$AR \$AR_FLAGS \$oldlib\$oldobjs~\$RANLIB \$tool_oldlib"
 
 # A language specific compiler.
-CC="/spin/WikiCite/bibtex.js/emscripten/emcc"
+CC="/var/www/bibtex.js/emscripten/emcc"
 
 # Is the compiler the GNU compiler?
 with_gcc=yes
