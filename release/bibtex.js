@@ -21,7 +21,6 @@ function(){
     }
   };
 
-
   window.BibTeX = function(root) {
     var worker = new Worker('../release/bibtex-webworker.js');
     var promises = [];
@@ -47,22 +46,6 @@ function(){
           self.on_stderr(obj.contents)
       }
     };
-
-
-    this.addUrl = function(real_url, pseudo_path, pseudo_name) {
-      var prom = new Promise();
-      promises.push(prom);
-      worker.postMessage(JSON.stringify({
-        cmd:         'addUrl',
-        id:          (promises.length-1),
-        real_url:    real_url,
-        pseudo_path: pseudo_path,
-        pseudo_name: pseudo_name
-      }));
-
-      return prom;
-    }
-
 
     this.getFile = function(pseudo_path, pseudo_name) {
       var prom1 = new Promise();
@@ -110,14 +93,16 @@ function(){
       return prom;
     }
 
+      this.compile = function(aux, bst, bib) {
+      var prom1 = this.addData(aux, '/', 'test.aux')
+      var prom2 = this.addData(bst, '/', 'plain.bst')
+      var prom3 = this.addData(bib, '/', 'refs.bib')
 
-    this.compile = function(code) {
-      var prom1 = this.addData(code, '/', 'test.aux')
-      var prom2 = new Promise();
+      var prom4 = new Promise();
 
-      prom1.then(function() {
-        var prom3 = new Promise();
-        promises.push(prom3);
+      prom3.then(function() {
+        var prom5 = new Promise();
+        promises.push(prom5);
 
         worker.postMessage(JSON.stringify({
           cmd:         'run',
@@ -125,10 +110,9 @@ function(){
 	  args:        ['test']
         }));
 
-        prom3.then(function(obj) {prom2.fulfil(obj)});
+        prom5.then(function(obj) {prom4.fulfil(obj)});
       });
-      return prom2;
+      return prom4;
     }
   }
 })()
-

@@ -87,12 +87,37 @@ cp tangle.bck tangle
 chmod +x tangle
 emmake make bibtex
 
-cp -r ../../../demo_files/{test.aux,plain.bst,refs.bib,ls-R,texmf.cnf,texmf-config,texmf-var,texmf,texmf-local,texmf-dist,bin} .
-env EMCC_DEBUG=1 emcc -o bibtex.sa.js bibtex.o  lib/lib.a ../kpathsea/.libs/libkpathsea.a --embed-file test.aux --embed-file plain.bst --embed-file refs.bib --embed-file ls-R --embed-file texmf.cnf --embed-file texmf-var  --embed-file texmf --embed-file texmf-local --embed-file texmf-dist --embed-file bin  -s FS_LOG=1
-sed -ir 's/_putc/_fputc/' bibtex.sa.js
-node bibtex.sa.js test
 
+#OPTS="-O0"                                                            # .703s
+#OPTS="-O1"                                                            # .943s
+#OPTS="-O1 --closure 1"                                                # .927s
+#OPTS="-O0 --closure 1"                                                # .650s better
+#OPTS="-O0 --llvm-opts 3 --closure 1"                                  # .946s
+#OPTS="-O0 --llvm-opts 2 --closure 1"                                  # .950s
+#OPTS="-O0 --llvm-opts 1 --closure 1"                                  # .946s
+#OPTS="-O2"                                                            # breaks
+#OPTS="-O0 --closure 1 -s INLINING_LIMIT=0"                            # 1.7s
+#OPTS="-O0 --closure 1 -s DOUBLE_MODE=0"                               # .648s
+#OPTS="-O0 --closure 1 -s PRECISE_I64_MATH=0"                          # .663s
+#OPTS="-O0 --closure 1 -s USE_TYPED_ARRAYS=0"                          # 1.8s
+#OPTS="-O0 --closure 1 -s USE_TYPED_ARRAYS=1"                          # 1.8s
+#OPTS="-O0 --closure 1 -s QUANTUM_SIZE=1 -s USE_TYPED_ARRAYS=0"        # breaks
+#OPTS="-O0 --closure 1 -s USE_TYPED_ARRAYS=2"                           # .557s better
+#OPTS="-O0 --closure 1 -s USE_TYPED_ARRAYS=2 -s RELOOP=1"               # .335s better
+#OPTS="-O0 --closure 1 -s USE_TYPED_ARRAYS=2 -s RELOOP=1 -s ASSERTIONS=0"  # .335s
+#OPTS="-O0 --closure 1 -s USE_TYPED_ARRAYS=2 -s RELOOP=1 -s DISABLE_EXCEPTION_CATCHING=1" # .333s
+#OPTS="-O0 --closure 1 -s USE_TYPED_ARRAYS=2 -s RELOOP=1 -s INLINING_LIMIT=0"               # 1.6s
+#OPTS="-O0 --closure 1 -s USE_TYPED_ARRAYS=2 -s RELOOP=1 -s DOUBLE_MODE=0"               # .346s
+#OPTS="-O0 --closure 1 -s USE_TYPED_ARRAYS=2 -s RELOOP=1 -s CORRECT_SIGNS=0 -s CORRECT_OVERFLOWS=0 -s CORRECT_ROUNDINGS=0 -s DOUBLE_MODE=0 -s PRECISE_I64_MATH=0"  # .319s
+#OPTS="-O0 --closure 1 -s USE_TYPED_ARRAYS=2 -s RELOOP=1"  # .333s breaks as webworker
+OPTS="-O0  -s USE_TYPED_ARRAYS=2 -s RELOOP=1"  # .836s :(
+
+
+cp -r ../../../demo_files/{test.aux,plain.bst,refs.bib,ls-R,texmf.cnf,texmf-config,texmf-var,texmf,texmf-local,texmf-dist,bin} .
 cp ../../../release/pre.js ../../../release/post.js .
-emcc -o bibtex.js bibtex.o  lib/lib.a ../kpathsea/.libs/libkpathsea.a --pre-js pre.js --post-js post.js --embed-file plain.bst --embed-file refs.bib --embed-file ls-R --embed-file texmf.cnf --embed-file texmf-var  --embed-file texmf --embed-file texmf-local --embed-file texmf-dist --embed-file bin
-#env EMCC_DEBUG=1 emcc -o bibtex.js bibtex.o  lib/lib.a ../kpathsea/.libs/libkpathsea.a --pre-js pre.js --post-js post.js  --embed-file plain.bst --embed-file refs.bib
+
+env EMCC_DEBUG=1 emcc $OPTS -o bibtex.sa.js bibtex.o  lib/lib.a ../kpathsea/.libs/libkpathsea.a --embed-file test.aux --embed-file plain.bst --embed-file refs.bib --embed-file bin --embed-file texmf.cnf
+time node bibtex.sa.js test
+
+env EMCC_DEBUG=1 emcc $OPTS -o bibtex.js bibtex.o  lib/lib.a ../kpathsea/.libs/libkpathsea.a --pre-js pre.js --post-js post.js --embed-file texmf.cnf --embed-file bin
 cp bibtex.js ../../../release/bibtex-webworker.js
