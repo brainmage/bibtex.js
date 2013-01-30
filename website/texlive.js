@@ -3,10 +3,12 @@ window.TeXLive = function(bibtex) {
 	bibtex.compile(aux, bst, bib).then(function() {
 	    bibtex.getFile('/', 'test.bbl').then(function(bbl) {
 		$('#bbl').val(bbl);
+
+            });
 		var button = $('button#compile');
 		button.text('Run BibTeX');
-		$('button').prop('disabled',false)
-            });
+		$('button').removeClass('disabled');
+		$('button').prop('disabled',false);
 	});
     return this;
   }
